@@ -24,7 +24,7 @@ export class ManageClassPage extends Component {
 		}
 
 		const facultyid = user.id;
-		const url = `https://attendease-7wry.onrender.com/api/courses?facultyid=${facultyid}`;
+		const url = `https://attendease-e5bz.onrender.com/api/courses?facultyid=${facultyid}`;
 
 		fetch(url)
 			.then((response) => {

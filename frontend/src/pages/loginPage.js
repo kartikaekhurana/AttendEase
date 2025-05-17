@@ -20,7 +20,7 @@ const LoginPage = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch('https://attendease-7wry.onrender.com/api/login', {
+      const response = await fetch('https://attendease-e5bz.onrender.com/api/login', {
         method: 'POST',
         headers: {
           'Content-type': 'application/json',

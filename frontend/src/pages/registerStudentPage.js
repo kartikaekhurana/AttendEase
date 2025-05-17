@@ -49,7 +49,7 @@ export class RegisterStudentPage extends Component {
 
 		try {
 			const response = await fetch(
-				"https://attendease-7wry.onrender.com/api/students/register",
+				"https://attendease-e5bz.onrender.com/api/students/register",
 				{
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
