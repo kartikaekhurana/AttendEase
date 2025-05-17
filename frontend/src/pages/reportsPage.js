@@ -26,7 +26,7 @@ export class ReportsPage extends Component {
 		}
 
 		const facultyid = user.id;
-		const url = `http://localhost:5000/api/courses?facultyid=${facultyid}`;
+		const url = `https://attendease-7wry.onrender.com/api/courses?facultyid=${facultyid}`;
 
 		fetch(url)
 			.then((response) => {
@@ -40,7 +40,7 @@ export class ReportsPage extends Component {
 	fetchStudentsForCourse = (courseId) => {
 		if (this.state.studentsData[courseId]) return; // Skip if data already fetched
 
-		const url = `http://localhost:5000/api/students?courseId=${courseId}`;
+		const url = `https://attendease-7wry.onrender.com/api/students?courseId=${courseId}`;
 
 		fetch(url)
 			.then((response) => {

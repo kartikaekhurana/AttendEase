@@ -44,7 +44,7 @@ export class linkStudentCoursePage extends Component {
 		}
 
 		const facultyId = user.id;
-		const url = `http://localhost:5000/api/courses?facultyid=${facultyId}`;
+		const url = `https://attendease-7wry.onrender.com/api/courses?facultyid=${facultyId}`;
 		fetch(url)
 			.then((response) => {
 				if (!response.ok) throw new Error("Failed to fetch courses.");
@@ -73,7 +73,7 @@ export class linkStudentCoursePage extends Component {
 			this.setState({ message: "Course and student must be selected!" });
 			return;
 		}
-		const url = `http://localhost:5000/api/course/link`;
+		const url = `https://attendease-7wry.onrender.com/api/course/link`;
 
 		try {
 			const response = await fetch(url, {

@@ -20,7 +20,7 @@ const app = express();
 
 app.use(
 	cors({
-		origin: "http://localhost:3000",
+		origin: "https://lucent-stardust-46c8a7.netlify.app/",
 		methods: ["GET", "POST", "PUT"],
 		allowedHeaders: ["Content-Type", "Authorization"],
 	})
