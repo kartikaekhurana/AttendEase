@@ -25,6 +25,7 @@ app.use(
 		allowedHeaders: ["Content-Type", "Authorization"],
 	})
 );
+app.use(cors());
 
 //    ----    ----    ----    ----    ----    ----
 // Use body parser middleware for JSON
