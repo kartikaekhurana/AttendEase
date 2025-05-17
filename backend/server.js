@@ -18,14 +18,16 @@ const app = express();
 // Enable CORS for React frontend
 //    ----    ----    ----    ----    ----    ----
 
+const cors = require('cors');
+
 app.use(
-	cors({
-		origin: "https://attendease786.netlify.app/",
-		methods: ["GET", "POST", "PUT"],
-		allowedHeaders: ["Content-Type", "Authorization"],
-	})
+  cors({
+    origin: "https://attendease786.netlify.app",  // no trailing slash
+    methods: ["GET", "POST", "PUT"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
 );
-app.use(cors());
+
 
 //    ----    ----    ----    ----    ----    ----
 // Use body parser middleware for JSON
