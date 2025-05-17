@@ -11,18 +11,15 @@ import { execFile } from "child_process";
 dotenv.config({ path: "./dot.env" });
 
 //    ----    ----    ----    ----    ----    ----
+const express = require('express');
+const cors = require('cors');  // Declare only once here
 
 const app = express();
 
-//    ----    ----    ----    ----    ----    ----
-// Enable CORS for React frontend
-//    ----    ----    ----    ----    ----    ----
-
-const cors = require('cors');
-
+// Then use it later
 app.use(
   cors({
-    origin: "https://attendease786.netlify.app",  // no trailing slash
+    origin: "https://attendease786.netlify.app",
     methods: ["GET", "POST", "PUT"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
