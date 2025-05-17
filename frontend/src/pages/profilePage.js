@@ -20,7 +20,7 @@ const ProfilePage = ({user}) =>  {
 
 	const handleSave = async () =>{
 		try{
-			const response = await fetch('http://localhost:5000//api/profile',
+			const response = await fetch('https://attendease-7wry.onrender.com/api/profile',
 				{
 					method : 'PUT',
 					headers: {
