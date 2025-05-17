@@ -1,0 +1,17 @@
+.link-course-select {
+	border-radius: 10px;
+	margin: 0px 5px;
+	width: 40%;
+	min-width: 150px;
+	padding: 4px 10px;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: yellow;
+	border: 1px solid #1f1e1e; /* Optional: adjust as needed */
+	-webkit-appearance: none; /* Remove default styling in Chrome/Safari */
+	-moz-appearance: none; /* Remove default styling in Firefox */
+	appearance: none;
+}
+option{
+	background-color: rgba(255, 255, 255, 0.3);
+	color: black;
+}

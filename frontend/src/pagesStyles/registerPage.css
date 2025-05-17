@@ -1,0 +1,139 @@
+.register-page {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: auto;
+	min-height: 100vh;
+	min-width: 100%;
+	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+  }
+  
+  .register-container {
+	width: 60%;
+	min-width: 750px;
+	margin-top: 0.1%;
+	padding: 45px 20px;
+	padding-left: 80px;
+	border: 5px solid rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 80px 40px rgba(0, 0, 0, 1);
+	border-radius: 30px;
+	text-align: left;
+	color: rgb(253, 228, 4);
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .register-heading {
+	font-size: 30px;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	margin-bottom: 50px;
+	margin-left: -30px;
+  }
+  
+  .register-form {
+	width: 90%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .register-form-group {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 2px;
+	margin-top: 2px;
+  }
+  
+  .register-form-label {
+	font-size: large;
+	width: 25%;
+	color: yellow;
+  }
+  
+  .register-input-group {
+	display: flex;
+	width: 70%;
+	margin: 14px 5px;
+  }
+
+  .register-name-group{
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	width: 90%;
+  }
+  .register-fname-input, .register-lname-input{
+	margin: 0px 2px;
+	border-radius: 10px;
+	padding: 8px 10px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: yellow;
+	border: none;
+	font-size: 14px;
+	font-weight: 600;
+  }
+  .register-input {
+	border-radius: 10px;
+	padding: 8px 10px;
+	width: 90%;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: yellow;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	font-weight: 600;
+  }
+
+  .register-input::placeholder, .register-fname-input::placeholder, .register-lname-input::placeholder {
+	color: rgba(255, 255, 3, 0.7);
+  }
+  
+  .register-btn{
+	margin-top: 10%;
+	border: 0px solid;
+	border-radius: 15px;
+	padding: 8px 60px;
+	font-size: large;
+	font-weight: 800;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background-color: rgba(255,255,255,0.5);
+  }
+
+  .register-error-div{
+	width: 91.2%;
+	margin-top: -19px;
+	text-align: right;
+  }
+  .register-error-label{
+	color: red;
+	font-weight: 100;
+	font-size: small;
+	margin-bottom: -8px;
+  }
+
+  .custom-alert {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 255, 0, 0.9);
+	color: white;
+	padding: 80px 20px;
+	border-radius: 15px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	z-index: 10;
+  }
+  

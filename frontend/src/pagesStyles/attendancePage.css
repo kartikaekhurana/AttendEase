@@ -1,0 +1,112 @@
+.attendance-course-div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.attendance-course-select{
+	margin-top: 12px;
+	padding: 12px;
+	border: none;
+	border-radius: 8px;
+	background-color: rgba(255,255,255,0.9);
+}
+.attendance-course-btn{
+	margin-top: 10px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.9);
+	font-size: 0.8rem;
+}
+
+.attendance-course-btn:hover {
+	background-color: #b0f7ff;
+}
+.attendance-date-div{
+	align-items: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.attendance-calendar{
+	padding: 2px 20px;
+	background-color: rgba(255,255,255,0.8);
+	color: black;
+	border: none;
+	border-radius: 5px;
+}
+.attendance-students-div{
+	color: white;
+	width: 60%;
+	min-width: 650px;
+	background-color: rgba(0,0,0,0.8);
+	text-align: center;
+	padding: 10px;
+	border: null;
+	border-radius: 10px;
+}
+.attendance-students-table{
+	font-weight: large;
+	width: 100%;
+}
+.attendance-student-head{
+	width: 42%;
+	padding: 8px 25px;
+	font-size: larger;
+	color: #faf14f;
+}
+.attendance-student-row{
+	border: null;
+	font-weight: smaller;
+}
+.attendance-student-row:nth-child(even) {
+	background-color: #272e35;
+}
+.attendance-student-row:nth-child(odd) {
+	background-color: #5d6e7d;
+}
+.attendance-student-cell{
+	padding: 2px 15px;
+}
+.attendance-submit-btn{
+	margin-top: 30px;
+	margin-bottom: 15px;
+	padding: 10px 35px;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.8);
+	font-size: 1.1rem;
+}
+.attendance-submit-btn:hover {
+	background-color: #ffffff;
+}
+.attendance-message-div{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	padding: 40px;
+	background-color: #4caf50;
+	color: white;
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: large;
+}
+.attendance-message{
+	color:black;
+	font-size: 1.2rem;
+}
+
+.webcam-wrapper {
+	display: flex;
+	justify-content: center;
+	margin: 30px 0;
+}
+
+.webcam-feed {
+	border-radius: 15px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	border: 4px solid #00bcd4;
+}

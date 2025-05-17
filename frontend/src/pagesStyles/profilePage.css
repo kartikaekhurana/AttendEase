@@ -1,0 +1,106 @@
+.profile-page {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: auto;
+	min-height: 100vh;
+	min-width: 100%;
+	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+  }
+  .profileHeading{
+	text-align: center;
+	margin: auto;
+	margin-top: 30px;
+	padding: auto;
+  }
+  .profile-container{
+	width: 60%;
+	min-width: 650px;
+	height: 75vh;
+	padding: 50px 50px;
+	padding-left: 100px;
+	border: 5px solid rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 80px 40px rgba(0,0,0,1);
+	border-radius: 30px;
+	text-align: left;
+	color: rgb(253, 228, 4);
+	background-color: rgba(0,0,0,0.4);
+  }
+  .profileHeading{
+	margin-bottom: 80px;
+  }
+  .labelGroup{
+	margin-top: 50px;
+  }
+  .labels{
+	margin-top: 10px;
+	margin-left: calc(50% - 250px);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+  }
+  .head{
+	margin-left: 50px;
+	font-size: x-large;
+  }
+  .inputField{
+	border-radius: 10px;
+	margin: 0px 5px;
+	width: 160px;
+	padding: 2px 10px;
+	background-color: rgba(255,255,255,0.3);
+	color: yellow;
+  }
+  .inputField::placeholder{
+	color: yellow;
+	opacity: 0.6;
+  }
+
+
+  .editButton{
+	padding: 5px 25px;
+	border: 3px solid rgba(255,255,255,0.1);
+	border-radius: 5px;
+	margin-left: 40%;
+	margin-top: 25px;
+	background-color: rgba(255,255,255,0.2);
+	color:antiquewhite;
+  }
+  .editButton:hover{
+	background-color: rgba(255,255,255,0.3);
+  }
+
+  .saveButton{
+	padding: 5px 25px;
+	border: 3px solid rgba(255,255,255,0.1);
+	border-radius: 5px;
+	margin-left: 35%;
+	margin-right: 20px;
+	margin-top: 25px;
+	background-color: rgba(255,255,255,0.2);
+	color:antiquewhite;
+  }
+  .saveButton:hover{
+	background-color: rgba(255,255,255,0.3);
+  }
+
+  .cancelButton{
+	padding: 5px 25px;
+	border: 3px solid rgba(255,255,255,0.1);
+	border-radius: 5px;
+	margin-top: 25px;
+	background-color: rgba(255,255,255,0.2);
+	color:antiquewhite;
+  }
+  .cancelButton:hover{
+	background-color: rgba(255,255,255,0.3);
+  }

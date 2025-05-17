@@ -1,0 +1,128 @@
+
+.login-page{
+	margin: 0;
+	padding: 0;
+	background-image: url('../../public/assets/background_image.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-container{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: clamp(-60px, -5vw, -80px); /* Responsive negative margin */
+    width: 50%;
+    padding-bottom: 20px;
+    gap: 10px; /* Added spacing between elements if needed */
+}
+.logo-container img{
+	width: 15%;
+    height: auto;
+	margin-bottom: 45px;
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 10%);
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 60%);
+}
+.logo-image{
+	width: 25%;
+    min-width: 220px;
+    max-width: 400px; /* Added max-width for better responsiveness */
+    margin: 0;
+    padding: 0;
+}
+.logo-text{
+	font-size: large;
+	padding: 0px;
+	margin-top: -91px;
+	margin-bottom: 5px;
+	color: black;
+	font-weight: 100;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	z-index: 1;
+	padding: 3px 20px;
+	border-radius: 10px;
+}
+
+.login-container{
+	background-color: rgba(255,255,255,0.05);
+	box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+	min-width: 400px;
+	max-width: 600px;
+	border: 0.5px solid rgba(104, 104, 100, 0.1);
+	border-radius: 10px;
+	padding: 40px 70px;
+}
+
+.form-cluster{
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+.email-box{
+	display:flex;
+	flex-direction: row;
+}
+label{
+	margin: 10px 20px 5px 2px;
+	color: rgba(255,255,255,0.9);
+	width: 200px;
+	text-align: left;
+}
+#emailInput, #passInput{
+	padding: 8px 15px;
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+#emailHelp{
+	text-align: left;
+	width: 80%;
+	margin-left: 34.7%;
+	margin-bottom: 30px;
+	margin-top: -0.2%;
+	font-size: small;
+}
+
+.pass-group{
+	display: flex;
+	flex-direction: row;
+}
+
+.submitbtn{
+	margin-top: 25px;
+	color: rgb(86, 4, 4);
+	background-color: rgba(221, 245, 145, 0.4);
+	border: 0px;
+	border-radius: 5px;
+	padding: 8px 25px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.submitbtn:hover{
+	background-color: rgba(221, 245, 145, 0.8);
+	color: black;
+	padding: 8px 35px;
+}
+
+.register-box{
+	text-align: end;
+	font-size: small;
+	font-weight: 500
+}
+.registerbtn{
+	background-color: rgba(255,255,255,0);
+	border: none;
+	margin-top: 1px;
+	color: rgb(125, 26, 26);
+	font-weight: 500;
+}
+.registerbtn:hover{
+	scale: 1.03;
+	color: rgb(126, 73, 4);
+}
