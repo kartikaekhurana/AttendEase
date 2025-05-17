@@ -55,7 +55,7 @@ export class attendancePage extends Component {
 			return;
 		}
 		const facultyId = user.id;
-		const url = `https://attendease-7wry.onrender.com/api/courses?facultyid=${facultyId}`;
+		const url = `http://localhost:5000//api/courses?facultyid=${facultyId}`;
 		fetch(url)
 			.then((response) => {
 				if (!response.ok) throw new Error("Failed to fetch courses.");
@@ -72,7 +72,7 @@ export class attendancePage extends Component {
 		// If students for this course are already fetched, we skip fetching again.
 		if (this.state.studentsData[courseId]) return;
 
-		const url = `https://attendease-7wry.onrender.com/api/students?courseId=${courseId}`;
+		const url = `http://localhost:5000//api/students?courseId=${courseId}`;
 		fetch(url)
 			.then((response) => {
 				if (!response.ok) throw new Error("Failed to fetch students");
@@ -141,7 +141,7 @@ export class attendancePage extends Component {
 
 				try {
 					const response = await fetch(
-						"https://attendease-7wry.onrender.com/api/attendance/recognize",
+						"http://localhost:5000//api/attendance/recognize",
 						{
 							method: "POST",
 							headers: { "Content-Type": "application/json" },
@@ -200,7 +200,7 @@ export class attendancePage extends Component {
 			})
 		);
 
-		fetch("https://attendease-7wry.onrender.com/api/attendance/submit", {
+		fetch("http://localhost:5000//api/attendance/submit", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({
